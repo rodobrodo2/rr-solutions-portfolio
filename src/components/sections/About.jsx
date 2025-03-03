@@ -43,11 +43,11 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4"> Education</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>
-                                    <strong> - Diploma in Sviluppo Web: </strong>  Mia Tech Academy
+                                    <strong> Diploma in Sviluppo Web: </strong>  Mia Tech Academy
                                     [2024 - 2025]
                                 </li>
                                 <li>
-                                    - What i leared: Struttura dati, Sviluppo Web...
+                                 What i leared: Struttura dati, Sviluppo Web...
                                 </li>
                             </ul>
                         </div>
@@ -55,7 +55,7 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4"> Work Experience</h3>
                             <div className="space-y-4 text-gray-300">
                                 <h4 className="font-semibold"> Junior Frontend Web developer at ABC Corp [2025 - Present]</h4>
-                                <p>  - Sviluppato e mantenuto interfacce utente responsive utilizzando HTML, CSS, JavaScript e framework moderni come React con Vite e Tailwind CSS. Collaborato con il team di sviluppo per integrare API e migliorare l’esperienza utente. Ottimizzato le prestazioni del frontend e garantito la compatibilità cross-browser.</p>
+                                <p> Sviluppato e mantenuto interfacce utente responsive utilizzando HTML, CSS, JavaScript e framework moderni come React con Vite e Tailwind CSS. Collaborato con il team di sviluppo per integrare API e migliorare l’esperienza utente. Ottimizzato le prestazioni del frontend e garantito la compatibilità cross-browser.</p>
                             </div>
                         </div>
                     </div>
