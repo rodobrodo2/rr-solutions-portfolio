@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-personal: rgba(10, 10, 10, 0.8)
-  --color-btnMenu: rbga(59, 130, 245, 0.4)
+  --color-personal: rgba(10, 10, 10, 0.8);
+  --color-btnMenu: rbga(59, 130, 245, 0.4);
 }
 
 html, body {
