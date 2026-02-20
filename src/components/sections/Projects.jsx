@@ -8,31 +8,31 @@ export const Projects = () => {
             description: "A platform to help students find affordable housing. Features accessible and responsive UI with clear user flows, listing and search functionality to improve discovery and usability.",
             tags: ["React", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
             link: "https://www.linkedin.com/posts/redi-rroshi-b3a09b30a_sono-entusiasta-di-condividere-il-mio-primo-ugcPost-7300500543196581888-09jm",
-            linkLabel: "View on LinkedIn →",
+            linkLabel: "View on LinkedIn",
             badge: null,
         },
         {
             title: "Workey",
             description: "A mobile-first job matching application connecting workers and employers for fast job opportunities. Features clean UI focused on speed, authentication flow and scalable data handling with Supabase as backend.",
             tags: ["Flutter", "Dart", "Supabase"],
-            link: "https://github.com/rodobrodo2/workpop",
-            linkLabel: "View on GitHub →",
+            link: null,
+            linkLabel: null,
             badge: "In Progress",
         },
         {
             title: "Pciante",
             description: "A full-stack e-commerce platform for an online jewellery shop built with the MERN stack. Features product listings, cart management, user authentication and a clean, responsive shopping experience.",
             tags: ["MongoDB", "Express", "React", "Node.js", "JavaScript"],
-            link: "https://github.com/rodobrodo2/onlineShop-picante-",
-            linkLabel: "View on GitHub →",
+            link: null,
+            linkLabel: null,
             badge: null,
         },
         {
             title: "Appy Landing",
-            description: "A demo landing page built with HTML, CSS and JavaScript. Clean, responsive design with smooth animations and intuitive structure — built for educational purposes.",
+            description: "A demo landing page built with HTML, CSS and JavaScript. Clean, responsive design with smooth animations and intuitive structure.",
             tags: ["JavaScript", "HTML", "CSS"],
             link: "https://preview.cruip.com/appy/",
-            linkLabel: "View Demo →",
+            linkLabel: "View Demo",
             badge: null,
         },
         {
@@ -40,7 +40,7 @@ export const Projects = () => {
             description: "A collection of small projects built while learning web development: an interactive quiz page, a weather app integrating a real-time API, and a task management To-Do List.",
             tags: ["JavaScript", "HTML", "CSS"],
             link: "https://github.com/Rodobrodo2/portfolio",
-            linkLabel: "View on GitHub →",
+            linkLabel: "View on GitHub",
             badge: null,
         },
     ];
@@ -76,18 +76,12 @@ export const Projects = () => {
                                         ))}
                                     </div>
                                 </div>
-                                {project.link && (
-                                    <div className="flex justify-end">
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
-                                        >
-                                            {project.linkLabel}
-                                        </a>
-                                    </div>
-                                )}
+                                <div className="flex justify-end">
+                                    {project.link
+                                        ? <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors text-sm">{project.linkLabel}</a>
+                                        : <span className="text-xs text-gray-500 border border-white/10 px-2 py-0.5 rounded-full">Private Repo</span>
+                                    }
+                                </div>
                             </div>
                         ))}
                     </div>
